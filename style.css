@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 28px 16px;
+    background: #f5f6f8;
+    color: #222;
+}
+
+.container {
+    width: min(1100px, 100%);
+    margin: 0 auto;
+    padding: 26px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    margin: 0 0 26px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.table-wrap {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+}
+
+th, td {
+    border: 1px solid #999;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background: #b70000;
+    color: #fff;
+}
+
+tbody tr:nth-child(even) {
+    background: #f7f7f7;
+}
+
+.btn {
+    display: inline-block;
+    border: 0;
+    border-radius: 4px;
+    padding: 9px 12px;
+    font-size: 14px;
+    font-family: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.btn-primary {
+    background: #b70000;
+}
+
+.btn-edit {
+    background: #d88b00;
+}
+
+.btn-delete {
+    background: #a40000;
+}
+
+.btn-secondary {
+    background: #666;
+}
+
+.actions {
+    white-space: nowrap;
+}
+
+.actions form {
+    display: inline;
+}
+
+.form-container {
+    max-width: 650px;
+}
+
+label {
+    display: block;
+    margin: 14px 0 6px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 0 0 4px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.form-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 18px;
+}
+
+.alert {
+    padding: 12px;
+    margin: 14px 0;
+    border: 1px solid #9bc9a2;
+    border-radius: 4px;
+    background: #eaf7ec;
+    color: #205b2a;
+}
+
+.alert-error {
+    background: #fff0f0;
+    border-color: #e4a3a3;
+    color: #8c1515;
+}
+
+.empty {
+    text-align: center;
+    padding: 24px;
+}
+
+@media (max-width: 650px) {
+    .container {
+        padding: 16px;
+    }
+    th, td {
+        padding: 8px;
+        font-size: 13px;
+    }
+}
